@@ -19,7 +19,7 @@
             <v-card>
               <v-card-media
                 class="white--text display-1"
-                src="https://vuetifyjs.com/static/doc-images/cards/docks.jpg"
+                src="https://cdn.vuetifyjs.com/images/cards/docks.jpg"
               >
                 <v-container fill-height fluid>
                   <v-layout fill-height>
@@ -69,7 +69,7 @@ export default {
 <style>
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  background-image: url("https://vuetifyjs.com/static/doc-images/vbanner.jpg");
+  background-image: url("assets/vbanner.jpg");
   height: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

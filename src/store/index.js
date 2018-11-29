@@ -77,6 +77,14 @@ export default new Vuex.Store({
         .catch((err) => {
           // eslint-disable-next-line
           console.log(err);
+          const postsApi = [
+            { id: 1, title: 'Titulo 1', author: 'Jorge Chiquín', content: 'Content 1', avatar: 'https://www.researchgate.net/profile/Maria_Monreal2/publication/315108532/figure/fig1/AS:472492935520261@1489662502634/Figura-2-Avatar-que-aparece-por-defecto-en-Facebook.png', likes: 0 },
+            { id: 2, title: 'Titulo 2', author: 'Jorge Chiquín', content: 'Content 2', avatar: 'https://www.researchgate.net/profile/Maria_Monreal2/publication/315108532/figure/fig1/AS:472492935520261@1489662502634/Figura-2-Avatar-que-aparece-por-defecto-en-Facebook.png', likes: 0 },
+            { id: 3, title: 'Titulo 3', author: 'Jorge Chiquín', content: 'Content 3', avatar: 'https://www.researchgate.net/profile/Maria_Monreal2/publication/315108532/figure/fig1/AS:472492935520261@1489662502634/Figura-2-Avatar-que-aparece-por-defecto-en-Facebook.png', likes: 0 },
+            { id: 4, title: 'Titulo 4', author: 'Jorge Chiquín', content: 'Content 4', avatar: 'https://www.researchgate.net/profile/Maria_Monreal2/publication/315108532/figure/fig1/AS:472492935520261@1489662502634/Figura-2-Avatar-que-aparece-por-defecto-en-Facebook.png', likes: 0 },
+          ];
+          context.commit('updatePosts', { posts: postsApi });
+          context.dispatch('updateStatus', { status: 'done' });
         });
     },
     updateStatus({ commit }, payload) {
